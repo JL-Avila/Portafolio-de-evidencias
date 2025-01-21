@@ -1,0 +1,58 @@
+/* Barra de navegación */
+.navbar {
+    list-style-type: none; /* Eliminar los puntos de la lista */
+    display: flex; /* Coloca los elementos en una sola fila */
+    padding: 0; /* Eliminar el padding del ul */
+    margin: 0; /* Eliminar el margen del ul */
+    background-color: #333; /* Fondo oscuro */
+    justify-content: center;
+  }
+  
+  /* Estilo para los elementos de la barra */
+  .navbar li {
+    position: relative; /* Necesario para el menú desplegable */
+    margin: 0;
+  }
+  
+  /* Enlaces dentro de la barra */
+  .navbar a {
+    display: block; /* Asegura que el área del enlace sea clickeable */
+    color: white; /* Color del texto */
+    text-decoration: none; /* Eliminar el subrayado */
+    padding: 14px 20px; /* Espaciado interno */
+    text-align: center; /* Centrar texto */
+  }
+  
+  /* Efecto al pasar el mouse */
+  .navbar a:hover {
+    background-color: #575757; /* Cambia el fondo al pasar el mouse */
+  }
+  
+  /* Estilo del menú desplegable */
+  .dropdown-menu {
+    display: none; /* Ocultar el menú inicialmente */
+    position: absolute; /* Posición relativa al padre */
+    background-color: #444; /* Fondo del menú desplegable */
+    list-style-type: none; /* Eliminar los puntos */
+    padding: 0;
+    margin: 0;
+    z-index: 1000; /* Asegurar que esté encima */
+    min-width: 200px; /* Ancho mínimo del menú */
+  }
+  
+  /* Elementos del menú desplegable */
+  .dropdown-menu li a {
+    padding: 10px 15px; /* Espaciado interno */
+    text-align: left; /* Alinear el texto a la izquierda */
+  }
+  
+  /* Mostrar el menú al pasar el mouse */
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  /* Hover para elementos del dropdown */
+  .dropdown-menu li a:hover {
+    background-color: #575757;
+  }
+  
