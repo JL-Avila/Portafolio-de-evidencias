@@ -1,0 +1,163 @@
+<style>
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 0px;
+  margin: auto;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: gray ;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  color: #ffffff;
+  padding: 15px;
+}
+/* Barra de navegación */
+.navbar {
+  list-style-type: none; /* Eliminar los puntos de la lista */
+  display: flex; /* Coloca los elementos en una sola fila */
+  padding: 0; /* Eliminar el padding del ul */
+  margin: 0; /* Eliminar el margen del ul */
+  background-color: #333; /* Fondo oscuro */
+  justify-content: center;
+}
+
+/* Estilo para los elementos de la barra */
+.navbar li {
+  position: relative; /* Necesario para el menú desplegable */
+  margin: 0;
+}
+
+/* Enlaces dentro de la barra */
+.navbar a {
+  display: block; /* Asegura que el área del enlace sea clickeable */
+  color: white; /* Color del texto */
+  text-decoration: none; /* Eliminar el subrayado */
+  padding: 14px 20px; /* Espaciado interno */
+  text-align: center; /* Centrar texto */
+}
+
+/* Efecto al pasar el mouse */
+.navbar a:hover {
+  background-color: #575757; /* Cambia el fondo al pasar el mouse */
+}
+
+/* Estilo del menú desplegable */
+.dropdown-menu {
+  display: none; /* Ocultar el menú inicialmente */
+  position: absolute; /* Posición relativa al padre */
+  background-color: #444; /* Fondo del menú desplegable */
+  list-style-type: none; /* Eliminar los puntos */
+  padding: 0;
+  margin: 0;
+  z-index: 1000; /* Asegurar que esté encima */
+  min-width: 200px; /* Ancho mínimo del menú */
+}
+
+/* Elementos del menú desplegable */
+.dropdown-menu li a {
+  padding: 10px 15px; /* Espaciado interno */
+  text-align: left; /* Alinear el texto a la izquierda */
+}
+
+/* Mostrar el menú al pasar el mouse */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Hover para elementos del dropdown */
+.dropdown-menu li a:hover {
+  background-color: #575757;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 1;
+  padding: 1;
+  margin-left: 1;
+  
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: black;
+  color: #ffffff;
+  list-style: none;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.24 ), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: gray;
+}
+
+.aside {
+  background-color: black;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+  background-color: black;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+</style>.
